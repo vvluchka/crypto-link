@@ -1,0 +1,27 @@
+$text-color: #ffffff;
+$font: Poppins;
+$background: #16181d;
+
+.navigation {
+  background-color: $background;
+  width: 100%;
+  padding: 30px 210px;
+  margin: auto;
+  color: $text-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font;
+  font-size: 18px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 22px;
+  p {
+    margin: 0;
+  }
+}
