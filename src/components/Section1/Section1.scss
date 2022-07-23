@@ -1,0 +1,46 @@
+$green: #00ad6f;
+$font: Poppins;
+$black: #16181d;
+$light-gray: #708599;
+.first-container {
+  padding-top: 220px;
+  padding-right: 210px;
+  display: flex;
+  flex-direction: row;
+  font-family: $font;
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+    height: fit-content;
+    padding-top: 100px;
+    .heading {
+      margin: 0;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+    p {
+      color: $light-gray;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 200%;
+    }
+    .get-started {
+      width: 262px;
+      height: 68px;
+      background-color: $black;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      p {
+        margin: 0;
+        color: #ffffff;
+      }
+    }
+  }
+}

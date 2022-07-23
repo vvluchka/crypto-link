@@ -1,0 +1,21 @@
+$green: #00ad6f;
+$font: Poppins;
+$black: #16181d;
+$light-gray: #708599;
+
+.text2{
+  font-family: $font;
+  text-align: center;
+  h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 134%;
+    color:$black;
+  }
+  p{
+    color:$light-gray;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 200%;
+  }
+}
