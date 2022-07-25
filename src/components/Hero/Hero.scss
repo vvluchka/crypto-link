@@ -1,92 +1,76 @@
+@use "../../styles/variables" as *;
 
-
-$background : #16181D;
-$text-color: #FFFFFF;
-$font: Poppins;
-$green: #00AD6F;
-$button-gradient: rgba(255, 255, 255, 0.06);
-
-.container{
+.container {
   max-width: 100%;
-
-  background-color: $background;;
+  background-color: $background;
   margin: auto;
 }
 
-
-
-
-  .main{
-    display: flex;
-    width: fit-content;
-    flex-direction: column;
-    gap:100px;
-    padding: 210px 0px 277px 210px;
-    margin:0px;
-    font-family: $font;
-    color:$text-color;
-    .heading{
-      margin: 0;
-      font-size:84px;
-      font-weight: 700;
-      line-height: 120%;
-    }
-    .text{
-      margin: 0;
-      line-height: 200%;
-      font-weight: 500;
-      font-size: 22px;
-    }
-    .buttons-block{
-      width: fit-content;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      gap:30px;
-      .buttons{
-        min-width:262px;
-        height: 64px;
-        background-color: $text-color;
-        border-radius: 10px;
-        font-size: 20px;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:12px;
-      }
-      .learn-more{
-        padding: 18px, 48px;
-        background-color: $button-gradient;
-        transition: 0.7s;
-        p{
-          margin: 0;
-        }
-      }
-      .learn-more:hover{
-        background-color: rgba(255, 255, 255, 0.22);;
-        cursor: pointer;
-        transform: scale(1.1);
-        
-      }
-      .get-started{
-        padding: 18px, 48px;
-        background-color: $green;
-        transition: 0.7s;
-        
-        p{
-          margin: 0;
-        }
-      }
-      .get-started:hover{
-        background-color:#00E995;
-        cursor: pointer;
-        transform: scale(1.1);
-      }
-      
-
-    }
-    
-
-
+.main {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  gap: 100px;
+  padding: 210px 0px 277px 210px;
+  margin: 0px;
+  font-family: $font;
+  color: $text-color;
+  .heading {
+    margin: 0;
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 120%;
   }
+  .text {
+    margin: 0;
+    line-height: 200%;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .buttons-block {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    .buttons {
+      min-width: 262px;
+      height: 64px;
+      background-color: $text-color;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    .learn-more {
+      padding: 18px, 48px;
+      background-color: $button-gradient;
+      transition: 0.7s;
+      p {
+        margin: 0;
+      }
+    }
+    .learn-more:hover {
+      background-color: rgba(255, 255, 255, 0.22);
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    .get-started {
+      padding: 18px, 48px;
+      background-color: $green;
+      transition: 0.7s;
+
+      p {
+        margin: 0;
+      }
+    }
+    .get-started:hover {
+      background-color: #00e995;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}

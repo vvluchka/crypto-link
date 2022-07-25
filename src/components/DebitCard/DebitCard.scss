@@ -1,39 +1,38 @@
-$green: #00ad6f;
-$font: Poppins;
-$black: #16181d;
-$light-gray: #708599;
-$card-back: #f7f7f8;
-$white: #ffffff;
-
+@use "../../styles/variables" as *;
 .debit-card {
   width: 100%;
   height: 1200px;
-  background: url("../../../public/images/debit-card-background.png") no-repeat right;
-  .img-overlay{
+  background: url("../../../public/images/debit-card-background.png") no-repeat
+    right;
+  .img-overlay {
     width: 100%;
     height: 100%;
-    background: linear-gradient(89.12deg, #202020 27.12%, rgba(32, 32, 32, 0) 99.17%);;
-    .text{
-      font-size:22px;
+    background: linear-gradient(
+      89.12deg,
+      #202020 27.12%,
+      rgba(32, 32, 32, 0) 99.17%
+    );
+    .text {
+      font-size: 22px;
       font-family: $font;
       color: $white;
       text-align: left;
       width: 680px;
       position: relative;
       top: 260px;
-      left:206px;
-      h1{
+      left: 206px;
+      h1 {
         font-weight: 700;
         font-size: 64px;
         line-height: 134%;
         margin-bottom: 50px;
       }
-      p{
+      p {
         font-weight: 500;
         line-height: 200%;
         margin-bottom: 100px;
       }
-      .get-card-button{
+      .get-card-button {
         font-weight: 600;
         line-height: 160%;
         display: flex;
@@ -41,7 +40,7 @@ $white: #ffffff;
         gap: 16px;
         transition: 0.7s;
       }
-      .get-card-button:hover{
+      .get-card-button:hover {
         cursor: pointer;
         gap: 30px;
         opacity: 0.5;

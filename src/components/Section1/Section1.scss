@@ -1,7 +1,5 @@
-$green: #00ad6f;
-$font: Poppins;
-$black: #16181d;
-$light-gray: #708599;
+@use "../../styles/variables" as *;
+
 .first-container {
   padding-top: 220px;
   padding-right: 210px;

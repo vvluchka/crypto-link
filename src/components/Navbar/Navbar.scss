@@ -1,6 +1,4 @@
-$text-color: #ffffff;
-$font: Poppins;
-$background: #16181d;
+@use "../../styles/variables" as *;
 
 .navigation {
   background-color: $background;

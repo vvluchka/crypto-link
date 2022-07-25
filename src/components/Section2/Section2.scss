@@ -1,7 +1,4 @@
-$green: #00ad6f;
-$font: Poppins;
-$black: #16181d;
-$light-gray: #708599;
+@use "../../styles/variables" as *;
 
 .text2{
   font-family: $font;
