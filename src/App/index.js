@@ -1,11 +1,10 @@
-
-import Hero from "../components/Hero/Hero";
-import Navbar from "../components/Navbar/Navbar";
-import Section1 from "../components/Section1/Section1";
-import Section2 from "../components/Section2/Section2";
-import CurrencyCards from "../components/CurrencyCards/CurrencyCards";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import Section1 from "../components/Section1";
+import Section2 from "../components/Section2";
+import CurrencyCards from "../components/CurrencyCards";
 import CurrencyData from "../CurrencyData";
-import DebitCard from "../components/DebitCard/DebitCard";
+import DebitCard from "../components/DebitCard";
 
 function App() {
   const cards = CurrencyData.map((card) => {

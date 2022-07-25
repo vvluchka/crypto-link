@@ -1,5 +1,5 @@
 import React from "react"
-import "./CurrencyCards.scss"
+import "./styles.scss"
 
 function CurrencyCards(props){
   return(
