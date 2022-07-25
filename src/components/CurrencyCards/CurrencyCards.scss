@@ -12,6 +12,7 @@ $card-back: #F7F7F8;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 345px;
   column-gap: 40px;
+  margin-bottom: 246px;
   .grid-element{
     background-color: $card-back;
     border-radius: 34px;

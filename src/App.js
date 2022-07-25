@@ -6,6 +6,7 @@ import Section1 from "./components/Section1/Section1";
 import Section2 from "./components/Section2/Section2";
 import CurrencyCards from "./components/CurrencyCards/CurrencyCards";
 import CurrencyData from "./CurrencyData";
+import DebitCard from "./components/DebitCard/DebitCard";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <div className="grid">
         {cards}
       </div>
+      <DebitCard />
     </div>
   );
 }
