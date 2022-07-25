@@ -1,10 +1,38 @@
 @use "../../styles/variables" as *;
 @use "../../styles/functions" as *;
 
-.scroll-to-top{
+.scroll-to-top {
   position: fixed;
   width: rem(60px);
   height: rem(60px);
   bottom: rem(36px);
-  right: rem(36px);
+  right: rem(200px);
+  border: none;
+  border-radius: 10px;
+  background: $green;
+
+  transition: 0.7s;
+}
+.scroll-to-top:hover {
+  cursor: pointer;
+  background-color: $darkgreen;
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }

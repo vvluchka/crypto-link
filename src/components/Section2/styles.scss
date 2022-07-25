@@ -1,19 +1,19 @@
 @use "../../styles/variables" as *;
 
-.text2{
+.text2 {
   font-family: $font;
   text-align: center;
   margin-left: 460px;
   margin-right: 460px;
   margin-bottom: 140px;
-  h1{
+  h1 {
     font-size: 64px;
     font-weight: 700;
     line-height: 134%;
-    color:$black;
+    color: $black;
   }
-  p{
-    color:$light-gray;
+  p {
+    color: $light-gray;
     font-weight: 500;
     font-size: 22px;
     line-height: 200%;

@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.scss";
 
-
 function CurrencyCard(props) {
   return (
     <div className="grid-element">
