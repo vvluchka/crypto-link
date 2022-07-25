@@ -1,5 +1,5 @@
 import React from "react";
-import "./DebitCard.css";
+import "./DebitCard.scss";
 
 function DebitCard() {
   return (
