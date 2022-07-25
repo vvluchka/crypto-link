@@ -1,9 +1,11 @@
 @use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
 
 .navigation {
   background-color: $background;
   width: 100%;
-  padding: 30px 210px;
+  padding: rem(30px) rem(210px);
   margin: auto;
   color: $text-color;
   display: flex;
