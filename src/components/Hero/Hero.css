@@ -52,14 +52,26 @@
 .main .buttons-block .learn-more {
   padding: 18px, 48px;
   background-color: rgba(255, 255, 255, 0.06);
+  transition: 0.7s;
 }
 .main .buttons-block .learn-more p {
   margin: 0;
 }
+.main .buttons-block .learn-more:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .main .buttons-block .get-started {
   padding: 18px, 48px;
   background-color: #00AD6F;
+  transition: 0.7s;
 }
 .main .buttons-block .get-started p {
   margin: 0;
+}
+.main .buttons-block .get-started:hover {
+  background-color: #00E995;
+  cursor: pointer;
+  transform: scale(1.1);
 }/*# sourceMappingURL=Hero.css.map */

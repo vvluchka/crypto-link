@@ -8,6 +8,7 @@ $light-gray: #708599;
   display: flex;
   flex-direction: row;
   font-family: $font;
+  margin-bottom: 200px;
 
   .text {
     display: flex;
@@ -37,10 +38,16 @@ $light-gray: #708599;
       justify-content: center;
       align-items: center;
       gap: 12px;
+      transition: 0.7s;
       p {
         margin: 0;
         color: #ffffff;
       }
+    }
+    .get-started:hover{
+      background-color: $light-gray;
+      cursor: pointer;
+      transform: scale(1.1); 
     }
   }
 }

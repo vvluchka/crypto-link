@@ -1,6 +1,9 @@
 .text2 {
   font-family: Poppins;
   text-align: center;
+  margin-left: 460px;
+  margin-right: 460px;
+  margin-bottom: 140px;
 }
 .text2 h1 {
   font-size: 64px;

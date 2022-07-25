@@ -11,13 +11,24 @@
   font-family: Poppins;
   font-size: 18px;
 }
-
-.nav-logo {
+.navigation .nav-logo {
   display: flex;
   align-items: center;
   gap: 20px;
   font-size: 22px;
+  transition: 0.7s;
 }
-.nav-logo p {
+.navigation .nav-logo p {
   margin: 0;
+}
+.navigation .nav-logo:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.navigation .log-in {
+  transition: 0.7s;
+}
+.navigation .log-in:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }/*# sourceMappingURL=Navbar.css.map */
