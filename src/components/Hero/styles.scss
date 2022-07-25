@@ -1,17 +1,16 @@
 @use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
 
-.container {
-  max-width: 100%;
+.hero-container {
   background-color: $background;
-  margin: auto;
-}
+  display: flex;
+  justify-content: center;
 
 .main {
   display: flex;
-  width: fit-content;
   flex-direction: column;
   gap: 100px;
-  padding: 210px 0px 277px 210px;
+  padding-bottom: rem(277px);
   margin: 0px;
   font-family: $font;
   color: $text-color;
@@ -73,4 +72,5 @@
       transform: scale(1.1);
     }
   }
+}
 }

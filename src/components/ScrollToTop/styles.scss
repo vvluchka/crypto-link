@@ -1,0 +1,10 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.scroll-to-top{
+  position: fixed;
+  width: rem(60px);
+  height: rem(60px);
+  bottom: rem(36px);
+  right: rem(36px);
+}
