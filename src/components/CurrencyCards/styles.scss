@@ -8,34 +8,4 @@
   grid-template-rows: 345px;
   column-gap: 40px;
   margin-bottom: 246px;
-  .grid-element {
-    background-color: $card-back;
-    border-radius: 34px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: $font;
-    .currency-image {
-      position: relative;
-      bottom: 30px;
-      max-width: 159px;
-      max-height: 159px;
-      border-radius: 50%;
-      outline: 20px solid white;
-      margin-bottom: 46px;
-    }
-    .title {
-      margin: 0;
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 160%;
-    }
-    .price {
-      margin: 0;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 180%;
-      color: $light-gray;
-    }
-  }
 }

@@ -1,15 +1,13 @@
-import React from "react"
-import "./styles.scss"
+import React from "react";
+import "./styles.scss";
+import CurrencyData from "./CurrencyData";
+import CurrencyCard from "./CurrencyCard";
 
-function CurrencyCards(props){
-  return(
-    
-    <div className="grid-element">
-      <img className="currency-image" src={props.card.coverImage}></img>
-      <h3 className="title">{props.card.name}</h3>
-      <p className="price">{props.card.price}</p>
-    </div>    
-  )
+function CurrencyCards(props) {
+  const cards = CurrencyData.map((card) => {
+    return <CurrencyCard key={card.id} card={card} />;
+  });
+  return <div className="grid">{cards}</div>;
 }
 
 export default CurrencyCards;
