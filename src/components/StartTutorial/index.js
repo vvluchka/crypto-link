@@ -9,9 +9,7 @@ function StartTutorial() {
         <h1>
           Passive income made easy with the <span>CryptoLink</span>
         </h1>
-        <div className="start-tutorial-download-buttons-container">
-          <DownloadButtons />
-        </div>
+        <DownloadButtons />
         <div className="start-steps">
           <div className="step">
             <div className="step-number">1</div>
@@ -45,6 +43,7 @@ function StartTutorial() {
           </div>
         </div>
       </div>
+      <img src="/images/iphone/phone-illustration2.png" className="phone"/>
     </div>
   );
 }

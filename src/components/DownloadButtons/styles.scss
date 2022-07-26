@@ -5,12 +5,9 @@
   display: flex;
   flex-direction: row;
   gap: rem(30px);
-  max-width: fit-content;
+  max-width: 100%;
   margin: 0;
-  @media (max-width: 675px) {
-    flex-direction: column;
-    gap: rem(30px);
-  }
+
   .download-button {
     color: $white;
     min-width: 262px;

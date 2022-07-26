@@ -5,70 +5,136 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: $white;
-  background-image: url("../../../public/images/iphone/phone-illustration2.png");
-  background-color: $white;
-  background-position: right bottom;
-  background-repeat: no-repeat;
+  align-items: center;
   margin: auto;
-}
-.mobile-app {
-  
-  display: flex;
-  flex-direction: column;
-  padding-bottom: rem(397px);
-  padding-top: rem(260px);
-  font-family: $font;
-  margin: auto;
-  .start-tutorial-download-buttons-container{
-    width: fit-content;
-    margin: auto;
-    padding-top: rem(80px);
-    padding-bottom: rem(220px);
+  position: relative;
 
-  }
-  h1 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 134%;
-    text-align: center;
-    padding: 0 rem(200px);
-    span {
-      color: $green;
-    }
-  }
-  .start-steps {
-    max-width: rem(680px);
+  .mobile-app {
     display: flex;
     flex-direction: column;
-    gap: 64px;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 160%;
-    .step {
-      display: flex;
-      gap: 46px;
-      .step-number {
-        width: rem(80px);
-        height: rem(80px);
-        background-color: $black;
-        color: $white;
-        border-radius: 50%;
-        padding: rem(17px) rem(32px);
+    padding-bottom: rem(397px);
+    padding-top: rem(260px);
+    font-family: $font;
+    z-index: 1;
+
+    .download-buttons-container { 
+      width: fit-content;
+      margin: auto;
+      padding-top: rem(80px);
+      padding-bottom: rem(220px);
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 134%;
+      text-align: center;
+      padding: 0 rem(200px);
+      span {
+        color: $green;
       }
-      .step-text {
+    }
+    .start-steps {
+      max-width: rem(680px);
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 160%;
+      .step {
         display: flex;
-        flex-direction: column;
-        gap: 18px;
-        padding-top: rem(17px);
-        
-        p {
-          color: $light-gray;
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 180%;
-          padding-right: rem(44px);
+        align-items: flex-start;
+        gap: 46px;
+        .step-number {
+          min-width: rem(80px);
+          min-height: rem(80px);
+          max-width: rem(80px);
+          max-height: rem(80px);
+          background-color: $black;
+          color: $white;
+          border-radius: 50%;
+
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
         }
+        .step-text {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          padding-top: rem(17px);
+          
+          p {
+            color: $light-gray;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 180%;
+          }
+        }
+      }
+    }
+  }
+
+  .phone {
+    position: absolute;
+    right: 0;
+    bottom: rem(87px);
+  }
+}
+
+@media (max-width: 1500px) {
+  .start-tutorial-container {
+    .mobile-app {
+      padding-bottom: rem(200px);
+    } 
+    .phone {
+      width: rem(980px);
+      bottom: rem(180px);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .start-tutorial-container {
+    .mobile-app {
+      padding-bottom: 0;
+    }
+    .phone {
+      min-height: 390px;
+      object-fit: cover;
+      position: static;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .start-tutorial-container {
+    .mobile-app {
+      align-items: center;
+      h1{
+        font-size:32px;
+        padding: 0;
+      }
+      .start-steps {
+        order: 2;
+        padding-top: 64px;
+        padding-bottom: 74px;
+        .step {
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          .step-text {
+            text-align: center;
+          }
+        }
+      }
+      .download-buttons-container {
+        order: 3;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+        flex-direction: column;
       }
     }
   }
