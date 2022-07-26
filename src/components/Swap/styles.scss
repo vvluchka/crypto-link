@@ -1,63 +1,116 @@
 @use "../../styles/variables" as *;
 @use "../../styles/functions" as *;
 
-
-.cover-image{
-  background-image: url("../../../public/images/iphone/phone-illustration.png");
-  background-repeat: no-repeat;
-  background-position: left ;
-  
-
-}
 .swap-container {
+  position: relative;
   margin: auto;
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: $font;
   
-
-
-  .text {
+  .content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 70px;
-    padding-top: rem(344px);
-    padding-bottom: rem(491px);
-    padding-left: rem(790px);
-  
-    
-    .heading {
-      font-size: 64px;
-      font-weight: 700;
-      line-height: 120%;
-    }
-    p {
-      color: $light-gray;
-      font-weight: 500;
-      font-size: 22px;
-      line-height: 200%;
-    }
-    .get-started {
-      width: 262px;
-      height: 68px;
-      background-color: $black;
-      border-radius: 10px;
+    justify-content: flex-end;
+    z-index: 1;
+
+    .text {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-      transition: 0.7s;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      padding-top: rem(344px);
+      padding-bottom: rem(491px);
+      max-width: rem(680px);
+      
+      .heading {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 120%;
+        margin-bottom: rem(50px);
+      }
+
       p {
-        margin: 0;
-        color: #ffffff;
+        color: $light-gray;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 200%;
+        margin-bottom: rem(80px);
+      }
+
+      .get-started {
+        min-width: 262px;
+        min-height: rem(68px);
+        background-color: $black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        transition: 0.7s;
+        p {
+          margin: 0;
+          color: #ffffff;
+        }
+      }
+      .get-started:hover {
+        background-color: $light-gray;
+        cursor: pointer;
+        transform: scale(1.1);
       }
     }
-    .get-started:hover {
-      background-color: $light-gray;
-      cursor: pointer;
-      transform: scale(1.1);
+  }
+
+  .phone {
+    height: rem(855px);
+    position: absolute;
+    left: 0;
+    top: rem(224px);
+  }
+  .phone-mobile{
+    display: none;
+    max-width: 100%;
+    min-height: 470px;
+    min-width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1200px) {
+  .swap-container {
+    .content .text {
+      max-width: unset;
+      padding-bottom: 0px;
+    }
+    .phone {
+      display: none;
+    }
+    .phone-mobile {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .swap-container{
+    .content .text {
+      align-items: center;
+      text-align: center;
+      padding-top: rem(100px);
+
+      .heading{
+        font-size: 32px;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 54px;
+      }
+      .get-started {
+        width: 100%;
+      }
     }
   }
 }
