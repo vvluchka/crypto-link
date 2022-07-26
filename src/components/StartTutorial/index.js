@@ -2,7 +2,6 @@ import React from "react";
 import "./styles.scss";
 import DownloadButtons from "../DownloadButtons";
 
-
 function StartTutorial() {
   return (
     <div className="start-tutorial-container">
@@ -10,7 +9,9 @@ function StartTutorial() {
         <h1>
           Passive income made easy with the <span>CryptoLink</span>
         </h1>
-        <DownloadButtons />
+        <div className="start-tutorial-download-buttons-container">
+          <DownloadButtons />
+        </div>
         <div className="start-steps">
           <div className="step">
             <div className="step-number">1</div>

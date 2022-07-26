@@ -28,44 +28,48 @@
       font-size: 22px;
     }
 
-    .hero-buttons {
-      min-width: 262px;
-      height: 64px;
-      background-color: $text-color;
-      border-radius: 10px;
-      font-size: 20px;
-      font-weight: 600;
+    .hero-buttons-container {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-    }
-    .learn-more {
-      padding: 18px, 48px;
-      background-color: $button-gradient;
-      transition: 0.7s;
-      p {
-        margin: 0;
+      gap: rem(30px);
+      .hero-buttons {
+        min-width: 262px;
+        height: 64px;
+        background-color: $text-color;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
       }
-    }
-    .learn-more:hover {
-      background-color: rgba(255, 255, 255, 0.22);
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-    .get-started {
-      padding: 18px, 48px;
-      background-color: $green;
-      transition: 0.7s;
+      .learn-more {
+        padding: 18px, 48px;
+        background-color: $button-gradient;
+        transition: 0.7s;
+        p {
+          margin: 0;
+        }
+      }
+      .learn-more:hover {
+        background-color: rgba(255, 255, 255, 0.22);
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      .get-started {
+        padding: 18px, 48px;
+        background-color: $green;
+        transition: 0.7s;
 
-      p {
-        margin: 0;
+        p {
+          margin: 0;
+        }
       }
-    }
-    .get-started:hover {
-      background-color: #00e995;
-      cursor: pointer;
-      transform: scale(1.1);
+      .get-started:hover {
+        background-color: #00e995;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
     }
   }
 }

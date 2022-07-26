@@ -8,17 +8,25 @@
   background-color: $white;
   background-image: url("../../../public/images/iphone/phone-illustration2.png");
   background-color: $white;
-  background-position: right;
+  background-position: right bottom;
   background-repeat: no-repeat;
   margin: auto;
 }
 .mobile-app {
+  
   display: flex;
   flex-direction: column;
   padding-bottom: rem(277px);
   padding-top: rem(260px);
   font-family: $font;
   margin: auto;
+  .start-tutorial-download-buttons-container{
+    width: fit-content;
+    margin: auto;
+    padding-top: rem(80px);
+    padding-bottom: rem(220px);
+
+  }
   h1 {
     font-weight: 700;
     font-size: 64px;
@@ -28,7 +36,6 @@
     span {
       color: $green;
     }
-    margin-bottom: rem(80px);
   }
   .start-steps {
     max-width: rem(680px);
