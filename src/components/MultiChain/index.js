@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles.scss";
 
-function Section2() {
+function MultiChain() {
   return (
-    <div className="text2">
+    <div className="text2 content">
       <h1>Multi-Chain</h1>
       <p>
         Multi-Chain means multiple opportunities for yield across many different
@@ -14,4 +14,4 @@ function Section2() {
   );
 }
 
-export default Section2;
+export default MultiChain;

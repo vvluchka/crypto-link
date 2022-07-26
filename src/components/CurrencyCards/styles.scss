@@ -1,11 +1,10 @@
 @use "../../styles/variables" as *;
 .grid {
   width: 100%;
-  padding-left: 210px;
-  padding-right: 210px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 345px;
   column-gap: 40px;
+  margin: auto;
   margin-bottom: 246px;
 }

@@ -5,7 +5,9 @@
   background-color: $background;
   display: flex;
   justify-content: center;
-
+  background-image: url("../../../public/images/iphone/iPhone.png") , url("../../../public/images/iphone/green-glow.png"), url("../../../public/images/iphone/lines.png");
+  background-repeat: no-repeat;
+  background-position: right bottom , ;
   .main {
     display: flex;
     flex-direction: column;
@@ -29,8 +31,14 @@
     }
 
     .hero-buttons-container {
+      width: fit-content;
       display: flex;
+      flex-direction: row;
       gap: rem(30px);
+      @media (max-width: 675px) {
+        flex-direction: column;
+        gap: rem(30px);
+      }
       .hero-buttons {
         min-width: 262px;
         height: 64px;
@@ -72,4 +80,5 @@
       }
     }
   }
+
 }

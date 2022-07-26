@@ -5,7 +5,7 @@ function DebitCard() {
   return (
     <div className="debit-card">
       
-      <div className="img-overlay">
+      <div className="img-overlay content">
       <div className="text">
         <h1>CryptoLink<br/>Debit Card</h1>
         <p>

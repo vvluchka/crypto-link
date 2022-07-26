@@ -1,11 +1,10 @@
 @use "../../styles/variables" as *;
-
+@use "../../styles/functions" as *;
 .text2 {
   font-family: $font;
   text-align: center;
-  margin-left: 460px;
-  margin-right: 460px;
-  margin-bottom: 140px;
+  margin: auto;
+  padding-bottom: rem(140px);
   h1 {
     font-size: 64px;
     font-weight: 700;

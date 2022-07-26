@@ -7,6 +7,10 @@
   gap: rem(30px);
   max-width: fit-content;
   margin: 0;
+  @media (max-width: 675px) {
+    flex-direction: column;
+    gap: rem(30px);
+  }
   .download-button {
     color: $white;
     min-width: 262px;
@@ -36,6 +40,5 @@
   }
   .download-button:hover {
     cursor: pointer;
-    transform: scale(1.1); 
   }
 }

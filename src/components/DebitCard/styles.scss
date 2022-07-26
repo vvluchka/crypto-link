@@ -1,17 +1,23 @@
 @use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
 .debit-card {
   width: 100%;
   height: 1200px;
-  background: url("../../../public/images/debit-card-background.png") no-repeat
-    right;
+  padding-top: rem(260px);
+  padding-bottom: rem(347px);
+  background: linear-gradient(
+    89.12deg,
+    #202020 27.12%,
+    rgba(32, 32, 32, 0) 99.17%
+  );
+  background-position: left;
+
+  margin: auto;
   .img-overlay {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      89.12deg,
-      #202020 27.12%,
-      rgba(32, 32, 32, 0) 99.17%
-    );
+  
+    margin: auto;
+
     .text {
       font-size: 22px;
       font-family: $font;

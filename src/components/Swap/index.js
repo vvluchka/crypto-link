@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.scss";
 
-function Section1() {
+function Swap() {
   return (
     <div className="cover-image">
-      <div className="first-container content">
+      <div className="swap-container content">
         <div className="text">
           <h1 className="heading">CryptoLink</h1>
           <p>
@@ -24,4 +24,4 @@ function Section1() {
   );
 }
 
-export default Section1;
+export default Swap;
