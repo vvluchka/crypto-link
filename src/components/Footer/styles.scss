@@ -1,0 +1,74 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.footer-container {
+  background-color: $background;
+  display: flex;
+  justify-content: center;
+  color: $white;
+}
+
+.footer-content {
+  padding-top: rem(200px);
+  padding-bottom: rem(100px);
+  font-family: $font;
+  .upper-hr {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem(100px);
+    .social-media {
+      align-self: flex-end;
+      max-width: rem(256px);
+      max-height:rem(34px);
+      display: flex;
+      gap: rem(40px);
+      img {
+        transition: 0.7;
+      }
+      img:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+    }
+    .help {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 180%;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 134%;
+      }
+    }
+  }
+  .lower-hr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: rem(100px);
+    padding-top: rem(84px);
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse;
+      gap: rem(40px);
+      
+    }
+    .footer-rules{
+      display: flex;
+      flex-direction: row;
+      gap: rem(50px);
+      color:$footer-rules;
+      
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 180%;
+      }
+      
+    }
+  }
+}
