@@ -25,6 +25,7 @@ function Hero() {
           </div>
         </div>
       </main>
+        <img src="images/iphone/iPhone2.png" className="phone" />
     </div>
   );
 }
