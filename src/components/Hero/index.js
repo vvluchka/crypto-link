@@ -14,8 +14,8 @@ function Hero() {
           Swap,Yield Farm, Stake, Borrow and Lend cryptocurrency all in one
           application.
         </p>
-        <div className="buttons-block">
-          <div className="buttons learn-more">
+        <div className="buttons-container">
+          <div className="hero-buttons learn-more">
             <p>LEARN MORE</p>
             <img src="/images/arrow-down.svg"></img>
           </div>

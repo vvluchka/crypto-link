@@ -1,0 +1,68 @@
+@use "/src/styles/variables" as *;
+@use "/src/styles/functions" as *;
+
+.start-tutorial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $white;
+  background-image: url("../../../public/images/iphone/phone-illustration2.png");
+  background-color: $white;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.mobile-app {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: rem(277px);
+  padding-top: rem(260px);
+  font-family: $font;
+  margin: auto;
+  h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 134%;
+    text-align: center;
+    padding: 0 rem(200px);
+    span {
+      color: $green;
+    }
+    margin-bottom: rem(80px);
+  }
+  .start-steps {
+    max-width: rem(680px);
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 160%;
+    .step {
+      display: flex;
+      gap: 46px;
+      .step-number {
+        width: rem(80px);
+        height: rem(80px);
+        background-color: $black;
+        color: $white;
+        border-radius: 50%;
+        padding: rem(17px) rem(32px);
+      }
+      .step-text {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding-top: rem(17px);
+        
+        p {
+          color: $light-gray;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 180%;
+          padding-right: rem(44px);
+        }
+      }
+    }
+  }
+}

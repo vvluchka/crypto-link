@@ -6,33 +6,29 @@
   display: flex;
   justify-content: center;
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  padding-bottom: rem(277px);
-  margin: 0px;
-  font-family: $font;
-  color: $text-color;
-  .heading {
-    margin: 0;
-    font-size: 84px;
-    font-weight: 700;
-    line-height: 120%;
-  }
-  .text {
-    margin: 0;
-    line-height: 200%;
-    font-weight: 500;
-    font-size: 22px;
-  }
-  .buttons-block {
-    width: fit-content;
+  .main {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 30px;
-    .buttons {
+    flex-direction: column;
+    gap: 100px;
+    padding-bottom: rem(277px);
+    padding-top: rem(200px);
+    margin: 0px;
+    font-family: $font;
+    color: $text-color;
+    .heading {
+      margin: 0;
+      font-size: 84px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+    .text {
+      margin: 0;
+      line-height: 200%;
+      font-weight: 500;
+      font-size: 22px;
+    }
+
+    .hero-buttons {
       min-width: 262px;
       height: 64px;
       background-color: $text-color;
@@ -72,5 +68,4 @@
       transform: scale(1.1);
     }
   }
-}
 }

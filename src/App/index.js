@@ -5,6 +5,7 @@ import Section2 from "../components/Section2";
 import CurrencyCards from "../components/CurrencyCards";
 import DebitCard from "../components/DebitCard";
 import ScrollToTop from "../components/ScrollToTop";
+import StartTutorial from "../components/StartTutorial";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <CurrencyCards />
       <DebitCard />
       <ScrollToTop />
+      <StartTutorial />
     </>
   );
 }
