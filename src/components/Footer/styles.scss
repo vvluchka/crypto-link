@@ -37,17 +37,21 @@
       }
     }
     .help {
-      
       max-width: rem(840px);
-      p {
+
+      .need-help {
         font-weight: 500;
         font-size: 18px;
         line-height: 180%;
       }
-      h1 {
+
+      .contact {
         font-weight: 700;
         font-size: 64px;
         line-height: 134%;
+        color: $white;
+        text-decoration: none;
+        display: inline-block;
       }
     }
   }
@@ -87,10 +91,11 @@
         flex-direction: column;
         align-items: flex-start;
         .help {
-          h1 {
+          .contact{
             padding-bottom: rem(60px);
+            font-size: 42px;
           }
-          p {
+          .need-help {
             padding-bottom: rem(34px);
           }
         }
@@ -102,6 +107,7 @@
       .lower-hr {
         flex-direction: column-reverse;
         align-items: center;
+        padding-bottom: 0;
         .download-buttons-container {
           padding-top: rem(48px);
           padding-bottom: rem(84px);
@@ -117,15 +123,14 @@
 @media (max-width: 768px) {
   .footer-container {
     .footer-content,
-    content {
+    .content {
       padding-top: rem(80px);
       .upper-hr {
-        
         .help {
-          p {
+          .need-help {
             font-size: 14px;
           }
-          h1 {
+          .contact {
             font-size: 20px;
           }
         }

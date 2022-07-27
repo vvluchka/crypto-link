@@ -8,8 +8,10 @@ function Footer() {
       <div className="footer-content content">
         <div className="upper-hr">
           <div className="help">
-            <p>Need some help?</p>
-            <h1>Info@TheCryptoLink.com</h1>
+            <p className="need-help">Need some help?</p>
+            <a className="contact" href="mailto:Info@TheCryptoLink.com">
+              Info@TheCryptoLink.com
+            </a>
           </div>
           <div className="social-media">
             <img src="/images/social-media/instagram.svg"></img>
