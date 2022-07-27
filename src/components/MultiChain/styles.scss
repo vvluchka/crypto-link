@@ -1,32 +1,35 @@
 @use "../../styles/variables" as *;
 @use "../../styles/functions" as *;
-.text2 {
-  font-family: $font;
-  text-align: center;
-  margin: auto;
-  padding-bottom: rem(140px);
-  h1 {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 134%;
-    color: $black;
-  }
-  p {
-    color: $light-gray;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 200%;
-  }
-}
 
-@media (max-width: 768px) {
-  .text2 {
-    h1{
-      font-size: 32px;
+.multi-chain-container {
+  display: flex;
+  justify-content: center;
+  .text {
+    font-family: $font;
+    text-align: center;
+    padding-bottom: rem(140px);
+    h1 {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 134%;
+      color: $black;
     }
-    p{
-      font-size: 14px;
+    p {
+      color: $light-gray;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 200%;
     }
   }
-  
+
+  @media (max-width: 768px) {
+    .text2 {
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 }

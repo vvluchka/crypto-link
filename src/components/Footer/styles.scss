@@ -9,19 +9,20 @@
 }
 
 .footer-content {
-  width: 100%;
   padding-top: rem(200px);
   padding-bottom: rem(100px);
   font-family: $font;
+  display: flex;
+  flex-direction: column;
   .upper-hr {
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-bottom: rem(100px);
     .social-media {
-      width: fit-content;
-      padding-bottom: rem(10px);
+      padding-bottom: rem(16px);
       display: flex;
       gap: rem(40px);
       align-self: flex-end;
@@ -36,6 +37,8 @@
       }
     }
     .help {
+      
+      max-width: rem(840px);
       p {
         font-weight: 500;
         font-size: 18px;
@@ -80,13 +83,10 @@
     .footer-content,
     content {
       .upper-hr {
-        width: 100%;
+        
         flex-direction: column;
         align-items: flex-start;
         .help {
-          width: 100%;
-          flex-direction: column;
-          align-items: flex-start;
           h1 {
             padding-bottom: rem(60px);
           }
@@ -103,8 +103,11 @@
         flex-direction: column-reverse;
         align-items: center;
         .download-buttons-container {
-          padding-top: rem(80px);
+          padding-top: rem(48px);
           padding-bottom: rem(84px);
+        }
+        .footer-rules{
+          padding-bottom: rem(20px);
         }
       }
     }
@@ -117,6 +120,7 @@
     content {
       padding-top: rem(80px);
       .upper-hr {
+        
         .help {
           p {
             font-size: 14px;
@@ -124,6 +128,9 @@
           h1 {
             font-size: 20px;
           }
+        }
+        .social-media{
+          gap:rem(24px)
         }
       }
       .lower-hr {

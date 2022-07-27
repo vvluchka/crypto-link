@@ -2,54 +2,86 @@
 @use "../../styles/functions" as *;
 
 .debit-card {
-  width: 100%;
-  height: 1200px;
-  padding-top: rem(260px);
-  padding-bottom: rem(347px);
-  background: linear-gradient(
-    89.12deg,
-    #202020 27.12%,
-    rgba(32, 32, 32, 0) 99.17%
-  );
-  background-position: left;
-
+  max-height: 1200px;
+  background-image: linear-gradient(
+      89.12deg,
+      #202020 27.12%,
+      rgba(32, 32, 32, 0) 99.17%
+    ),
+    url("../../../public/images/debit-card-background.png");
+  background-position: left, right;
+  background-repeat: no-repeat;
   margin: auto;
-  .img-overlay {
-  
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
+  .debit-card-content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: rem(347px);
+    padding-top: rem(260px);
+    font-family: $font;
+    color: $white;
     .text {
-      font-size: 22px;
-      font-family: $font;
-      color: $white;
-      text-align: left;
-      width: 680px;
-      position: relative;
-      top: 260px;
-      left: 206px;
+      max-width: rem(680px);
       h1 {
+        margin-bottom: rem(50px);
         font-weight: 700;
         font-size: 64px;
         line-height: 134%;
-        margin-bottom: 50px;
       }
       p {
+        margin-bottom: rem(100px);
         font-weight: 500;
+        font-size: 22px;
         line-height: 200%;
-        margin-bottom: 100px;
       }
-      .get-card-button {
-        font-weight: 600;
-        line-height: 160%;
+      .debit-link {
+        height: fit-content;
         display: flex;
         align-items: center;
-        gap: 16px;
-        transition: 0.7s;
+        p {
+          margin: 0;
+          padding-right: rem(12px);
+        }
       }
-      .get-card-button:hover {
-        cursor: pointer;
-        gap: 30px;
-        opacity: 0.5;
+    }
+  }
+  img.card-image {
+    position: absolute;
+    top: rem(170px);
+    right: rem(370px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .debit-card {
+    .card-image {
+      position: static;
+    }
+    .debit-card-content {
+      .text {
+        h1 {
+          font-size: 48px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .debit-card {
+    .debit-card-content {
+      .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       }
     }
   }
