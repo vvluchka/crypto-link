@@ -7,6 +7,8 @@
   flex-direction: column;
   align-items: center;
   font-family: $font;
+  min-height: rem(345px);
+
   .grid-element:hover {
     transform: scale(1.1);
     cursor: pointer;

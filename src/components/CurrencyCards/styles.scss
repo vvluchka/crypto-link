@@ -1,13 +1,11 @@
 @use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
 .grid-container {
   display:flex;
   justify-content: center;
-  .grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 345px;
-    column-gap: 40px;
-    margin-bottom: 246px;
+  .swiper {
+    padding: 40px rem(68px);
+    max-width: 1532px;
   }
 }
