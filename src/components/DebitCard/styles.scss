@@ -2,31 +2,26 @@
 @use "../../styles/functions" as *;
 
 .debit-card {
-  max-height: 1200px;
-  background-image: linear-gradient(
-      89.12deg,
-      #202020 27.12%,
-      rgba(32, 32, 32, 0) 99.17%
-    ),
+  background-image: url("../../../public/images/card.png"),
+    linear-gradient(89.12deg, #202020 16.1272%, rgba(32, 32, 32, 0) 60%),
     url("../../../public/images/debit-card-background.png");
-  background-position: left, right;
-  background-repeat: no-repeat;
+  background-position: top rem(170px) right rem(370px), left, right;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
 
   .debit-card-content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding-bottom: rem(347px);
     padding-top: rem(260px);
     font-family: $font;
     color: $white;
-    .text {
-      max-width: rem(680px);
       h1 {
         margin-bottom: rem(50px);
         font-weight: 700;
@@ -38,6 +33,7 @@
         font-weight: 500;
         font-size: 22px;
         line-height: 200%;
+        max-width: rem(680px);
       }
       .debit-link {
         height: fit-content;
@@ -48,44 +44,53 @@
           padding-right: rem(12px);
         }
       }
-    }
-  }
-  img.card-image {
-    position: absolute;
-    top: rem(170px);
-    right: rem(370px);
   }
 }
 
 @media (max-width: 1200px) {
   .debit-card {
-    background-image: linear-gradient(178.07deg, #202020 56.76%, rgba(32, 32, 32, 0) 98.38%) 99.17%
-    ,
-    url("../../../public/images/debit-card-background.png");
-    .card-image {
-      position: static;
-    }
+    background-image: url("../../../public/images/card.png"),
+      linear-gradient(178.07deg, #202020 44%, rgba(32, 32, 32, 0) 77.5%),
+      url("../../../public/images/debit-card-background-big.png");
+
+    background-size: auto, auto, 1200px auto;
+    background-position: top 580px center, top, bottom -600px center;
+
     .debit-card-content {
-      .text {
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 692px;
+      text-align: center;
         h1 {
           font-size: 48px;
         }
         p {
           font-size: 16px;
         }
-      }
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .debit-card {
-    .debit-card-content {
-      .text {
+    background-size: auto, auto, 1024px auto;
+    background-position: top 580px center, top, bottom -520px center;
+  }
+}
+
+@media (max-width: 768px) {
+  .debit-card .debit-card-content {
+    .text {
       display: flex;
       flex-direction: column;
       align-items: center;
-      }
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .debit-card {
+    background-size: 90%, auto, 1024px auto;
+    background-position: bottom 320px center, top, bottom -520px center;
   }
 }

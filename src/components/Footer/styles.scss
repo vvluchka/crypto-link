@@ -141,6 +141,9 @@
       .lower-hr {
         flex-direction: column-reverse;
         align-items: center;
+        .rights{
+          text-align: center;
+        }
         .download-buttons-container {
           width: 100%;
           flex-direction: column;

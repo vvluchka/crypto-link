@@ -5,7 +5,6 @@ function DebitCard() {
   return (
     <div className="debit-card">
       <div className="debit-card-content content ">
-        <div className="text">
           <h1>
             CryptoLink <br />
             Debit Card
@@ -21,8 +20,6 @@ function DebitCard() {
             <img src="/images/arrow-right.svg"></img>
           </div>
         </div>
-      </div>
-      <img className="card-image"src="/images/card.png"></img>
     </div>
   );
 }
