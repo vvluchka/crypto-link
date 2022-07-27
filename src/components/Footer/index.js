@@ -20,14 +20,12 @@ function Footer() {
         </div>
         <hr />
         <div className="lower-hr">
+          <p className="rights">© CryptoLink 2022. All Right Reserved.</p>
           <div className="footer-rules">
-            <p>© CryptoLink 2022. All Right Reserved.</p>
             <p>Terms of Use</p>
             <p>Help</p>
           </div>
-          <div className="footer-download-buttons">
-            <DownloadButtons  />
-          </div>
+          <DownloadButtons />
         </div>
       </div>
     </div>
