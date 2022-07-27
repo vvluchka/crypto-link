@@ -10,7 +10,7 @@
   border: none;
   border-radius: 10px;
   background: $green;
-
+  z-index: 1;
   transition: 0.7s;
 
   &:hover {

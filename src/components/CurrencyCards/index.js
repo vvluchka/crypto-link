@@ -2,8 +2,11 @@ import React from "react";
 import CurrencyData from "./CurrencyData";
 import CurrencyCard from "./CurrencyCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination} from "swiper";
 
 import "./styles.scss";
+
+import "swiper/css/navigation";
 
 const breakpoints = {
   550: {
@@ -16,9 +19,9 @@ const breakpoints = {
   },
   1200: {
     slidesPerView: 4,
-    enabled: false
-  }
-}
+    enabled: false,
+  },
+};
 
 function CurrencyCards(props) {
   const cards = CurrencyData.map((card) => {
@@ -30,7 +33,18 @@ function CurrencyCards(props) {
   });
   return (
     <div className="grid-container">
-      <Swiper enabled={true} spaceBetween={40} slidesPerView={1} breakpoints={breakpoints}>
+      <Swiper
+        enabled={true}
+        spaceBetween={40}
+        slidesPerView={1}
+        breakpoints={breakpoints}
+        pagination={{
+          dynamicBullets: true ,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+
+      >
         {cards}
       </Swiper>
     </div>
