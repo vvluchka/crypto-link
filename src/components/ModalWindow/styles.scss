@@ -53,7 +53,7 @@
     }
     .form {
       display: flex;
-      gap: rem(24px);
+      justify-content: space-between;
 
       .text-input {
         font-family: $font;
