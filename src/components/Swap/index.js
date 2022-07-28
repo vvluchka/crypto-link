@@ -14,10 +14,10 @@ function Swap() {
             decentralized finance so that everyone can experience the benefits of
             DeFi.
           </p>
-          <div className="get-started">
-            <p>GET STARTED</p>
+          <button className="get-started">
+            GET STARTED
             <img src="/images/arrow-up-45.svg"></img>
-          </div>
+          </button>
         </div>
       </div>
 

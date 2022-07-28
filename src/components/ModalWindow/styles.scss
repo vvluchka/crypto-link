@@ -4,15 +4,37 @@
 .modal-window-container {
   display: flex;
   justify-content: center;
-  font-family: $font;
-  color: $light-gray;
-  background-color: $background;
-  .window {
-    .modal-window {
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: $modalBackground;
+
+  .modal-window {
+      background-color: $background;
+      font-family: $font;
+      color: $light-gray;
       display: flex;
       flex-direction: column;
-      padding-bottom: rem(277px);
-      padding-top: rem(200px);
+      padding: rem(80px) rem(85px) rem(80px) rem(80px);
+      background-image: url("../../../public/images/modal-glow.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      border-radius: 20px;
+      max-width: 100%;
+      max-height: 100%;
+      overflow: auto;
+      position: relative;
+
+      .close-modal {
+        position: absolute;
+        top: rem(20px);
+        right: rem(24px);
+      }
 
       .main-label {
         font-weight: 600;
@@ -37,6 +59,15 @@
           border-radius: 6px;
         }
       }
+    }
+}
+
+
+@media (max-width: 768px) {
+  .modal-window-container {
+    .modal-window {
+      width: 100%;
+      height: 100%;
     }
   }
 }

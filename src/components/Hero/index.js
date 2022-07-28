@@ -1,7 +1,10 @@
 import React from "react";
 import "./styles.scss";
 
-function Hero() {
+function Hero(props) {
+  const { openModal } = props;
+  // const openModal = props.openModal
+  
   return (
     <div className="hero-container">
       <main className="main content">
@@ -16,13 +19,13 @@ function Hero() {
         </p>
         <div className="hero-buttons-container">
           <div className="hero-buttons learn-more">
-            <p>LEARN MORE</p>
+            <b>LEARN MORE</b>
             <img src="/images/arrow-down.svg"></img>
           </div>
-          <div className="hero-buttons get-started">
-            <p>GET STARTED</p>
+          <button className="hero-buttons get-started" onClick={openModal}>
+            GET STARTED
             <img src="/images/arrow-up-45.svg"></img>
-          </div>
+          </button>
         </div>
       </main>
       <img src="images/iphone/iPhone2.png" className="phone" />

@@ -50,11 +50,9 @@
         align-items: center;
         gap: 12px;
         transition: 0.7s;
-        p {
-          font-size: 20px;
-          margin: 0;
-          color: #ffffff;
-        }
+        font-size: 20px;
+        margin: 0;
+        color: #ffffff;
       }
       .get-started:hover {
         background-color: $light-gray;
