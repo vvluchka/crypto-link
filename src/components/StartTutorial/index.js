@@ -15,7 +15,7 @@ function StartTutorial() {
             <div className="step-number">1</div>
             <div className="step-text">
               <h3>Download The CryptoLink</h3>
-              <p>
+              <p className="">
                 Get started with the CryptoLink on your IOS or android mobile
                 device.
               </p>

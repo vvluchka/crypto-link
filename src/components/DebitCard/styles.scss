@@ -22,13 +22,13 @@
     padding-top: rem(260px);
     font-family: $font;
     color: $white;
-      h1 {
+      .debit-card-heading {
         margin-bottom: rem(50px);
         font-weight: 700;
         font-size: 64px;
         line-height: 134%;
       }
-      p {
+      .debit-card-paragraph {
         margin-bottom: rem(100px);
         font-weight: 500;
         font-size: 22px;
@@ -39,10 +39,21 @@
         height: fit-content;
         display: flex;
         align-items: center;
-        p {
+        transition: 0.7s;
+        .link-text{
           margin: 0;
           padding-right: rem(12px);
+          transition: 0.4s;
         }
+      }
+      .debit-link:hover{
+        .link-text{
+          padding-right: 30px;
+          transition: 0.6s;
+        }
+        cursor:pointer;
+        opacity: 0.5;
+        transition: 0.4s;
       }
   }
 }
@@ -61,10 +72,10 @@
       padding-top: 100px;
       padding-bottom: 692px;
       text-align: center;
-        h1 {
+      .debit-card-heading {
           font-size: 48px;
         }
-        p {
+        .debit-card-paragraph {
           font-size: 16px;
         }
     }
@@ -84,6 +95,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      .debit-card-heading {
+        font-size: 32px;
+      }
+      .debit-card-paragraph {
+        font-size: 14px;
+      
+      }
     }
   }
 }

@@ -5,8 +5,8 @@ function MultiChain() {
   return (
     <div className="multi-chain-container">
       <div className="text content">
-        <h1>Multi-Chain</h1>
-        <p>
+        <p className="multi-chain-heading">Multi-Chain</p>
+        <p className="multi-chain-paragraph">
           Multi-Chain means multiple opportunities for yield across many
           different blockchains. The CryptoLink brings our users the best
           possible yield diversification by supporting more than just one

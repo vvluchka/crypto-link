@@ -36,6 +36,7 @@
       flex-direction: row;
       gap: rem(30px);
       .hero-buttons {
+        color: $white;
         min-width: 262px;
         min-height: 64px;
         background-color: $text-color;

@@ -8,13 +8,13 @@
     font-family: $font;
     text-align: center;
     padding-bottom: rem(140px);
-    h1 {
+    .multi-chain-heading {
       font-size: 64px;
       font-weight: 700;
       line-height: 134%;
       color: $black;
     }
-    p {
+    .multi-chain-paragraph {
       color: $light-gray;
       font-weight: 500;
       font-size: 22px;
@@ -23,11 +23,11 @@
   }
 
   @media (max-width: 768px) {
-    .text2 {
-      h1 {
+    .text {
+      .multi-chain-heading {
         font-size: 32px;
       }
-      p {
+      .multi-chain-paragraph {
         font-size: 14px;
       }
     }

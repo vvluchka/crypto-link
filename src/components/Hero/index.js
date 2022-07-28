@@ -18,10 +18,10 @@ function Hero(props) {
           application.
         </p>
         <div className="hero-buttons-container">
-          <div className="hero-buttons learn-more">
-            <b>LEARN MORE</b>
+          <button className="hero-buttons learn-more">
+            LEARN MORE
             <img src="/images/arrow-down.svg"></img>
-          </div>
+          </button>
           <button className="hero-buttons get-started" onClick={openModal}>
             GET STARTED
             <img src="/images/arrow-up-45.svg"></img>
