@@ -16,7 +16,7 @@ function ModalWindow(props) {
   return (
     <div className="modal-window-container">
       <div className="modal-window">
-        <button className="close-modal" onClick={closeModal}>x</button>
+        <button className="close-modal" onClick={closeModal}></button>
         <p className="less-label">
           <span className="main-label">Stay tuned</span>
           <br />
@@ -29,7 +29,7 @@ function ModalWindow(props) {
             placeholder="email@example.com"
             required
           />
-          <button className="submit-input" type="submit">Submit</button>
+          <button className="submit-button" type="submit">CONFIRM<img className="confirm-arrow" src="/images/confirm-arrow.svg"></img></button>
         </form>
       </div>
     </div>

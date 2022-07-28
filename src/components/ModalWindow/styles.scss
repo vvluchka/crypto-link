@@ -15,59 +15,89 @@
   background-color: $modalBackground;
 
   .modal-window {
-      background-color: $background;
-      font-family: $font;
-      color: $light-gray;
+    background-color: $background;
+    font-family: $font;
+    color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    padding: rem(80px) rem(85px) rem(80px) rem(80px);
+    background-image: url("../../../public/images/modal-glow.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    position: relative;
+
+    .close-modal {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: rem(20px);
+      right: rem(24px);
+      background-image: url("../../../public/images/close-button.svg");
+    }
+
+    .main-label {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 126%;
+      color: $white;
+    }
+    .less-label {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 180%;
+      margin-bottom: rem(48px);
+    }
+    .form {
       display: flex;
-      flex-direction: column;
-      padding: rem(80px) rem(85px) rem(80px) rem(80px);
-      background-image: url("../../../public/images/modal-glow.svg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      border-radius: 20px;
-      max-width: 100%;
-      max-height: 100%;
-      overflow: auto;
-      position: relative;
+      justify-content: space-between;
 
-      .close-modal {
-        position: absolute;
-        top: rem(20px);
-        right: rem(24px);
+      .text-input {
+        font-family: $font;
+        padding: 11px 18px;
+        background-color: inherit;
+        border: 1px solid $light-gray;
+        outline: 2px solid #24262b;
+        border-radius: 6px;
       }
-
-      .main-label {
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 126%;
+      .text-input::placeholder {
+        color: $placeholder-color;
+      }
+      .text-input:focus {
+        border: 2px solid $light-gray;
+        outline: 3px solid #24262b;
         color: $white;
       }
-      .less-label {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 180%;
-        margin-bottom: rem(48px);
-      }
-      .form {
-        display: flex;
-        justify-content: space-between;
-        .text-input {
-          padding: 11px 18px;
-          background-color: inherit;
-          border: 1px solid $light-gray;
-          outline: 2px solid #24262b;
-          border-radius: 6px;
+      .submit-button {
+        padding: rem(14px) rem(47.5px);
+        background-color: $green;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        color: $white;
+        .confirm-arrow {
+          padding-left: rem(15px);
         }
       }
     }
+  }
 }
-
 
 @media (max-width: 768px) {
   .modal-window-container {
     .modal-window {
       width: 100%;
       height: 100%;
+      .form {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+      }
     }
   }
 }
