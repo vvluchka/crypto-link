@@ -8,6 +8,7 @@
   align-items: center;
   font-family: $font;
   min-height: rem(345px);
+  justify-content: space-around;
 
   .grid-element:hover {
     transform: scale(1.1);
@@ -32,5 +33,17 @@
     font-size: 18px;
     line-height: 180%;
     color: $light-gray;
+    padding-bottom: rem(57px);
+  }
+}
+
+@media (max-width :400px){
+  .grid-element{
+    .currency-image{
+      max-width: rem(128px);
+    }
+    .price{
+      padding-bottom: rem(39px);
+    }
   }
 }

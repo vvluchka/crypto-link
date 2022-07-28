@@ -2,14 +2,15 @@ import React from "react";
 import CurrencyData from "./CurrencyData";
 import CurrencyCard from "./CurrencyCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination} from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 import "./styles.scss";
 
+import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const breakpoints = {
-  550: {
+  660: {
     enabled: true,
     slidesPerView: 2,
   },
@@ -39,11 +40,11 @@ function CurrencyCards(props) {
         slidesPerView={1}
         breakpoints={breakpoints}
         pagination={{
-          dynamicBullets: true ,
+          dynamicBullets: true,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
-
+        navigation={true}
       >
         {cards}
       </Swiper>

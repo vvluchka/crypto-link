@@ -2,18 +2,28 @@
 @use "../../styles/functions" as *;
 
 .grid-container {
-  display:flex;
+  display: flex;
   justify-content: center;
   .swiper {
+    position: relative;
     padding: 40px rem(68px);
     padding-bottom: rem(246px);
     max-width: 1532px;
-    .swiper-pagination{
-    padding-bottom: 100px;
+    .swiper-pagination {
+      padding-bottom: 100px;
+      .swiper-pagination-bullet-active {
+        background-color: $green;
+      }
     }
-  }
-
-  .swiper-pagination-bullet-active{
-    background-color: $green;
+    .swiper-button-prev {
+      top: 80%;
+      left: rem(40px);
+      color: $green;
+    }
+    .swiper-button-next {
+      top: 80%;
+      right: rem(40px);
+      color: $green;
+    }
   }
 }
