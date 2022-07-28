@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   font-family: $font;
-  
+
   .content {
     display: flex;
     justify-content: flex-end;
@@ -24,7 +24,7 @@
       padding-top: rem(344px);
       padding-bottom: rem(491px);
       max-width: rem(680px);
-      
+
       .swap-heading {
         font-size: 64px;
         font-weight: 700;
@@ -70,7 +70,7 @@
     left: 0;
     top: rem(224px);
   }
-  .phone-mobile{
+  .phone-mobile {
     display: none;
     max-width: 100%;
     min-height: 470px;
@@ -94,17 +94,17 @@
 }
 
 @media (max-width: 768px) {
-  .swap-container{
+  .swap-container {
     .content .text {
       align-items: center;
       text-align: center;
       padding-top: rem(100px);
 
-      .swap-heading{
+      .swap-heading {
         font-size: 32px;
         margin-bottom: 24px;
       }
-      .swap-paragraph{
+      .swap-paragraph {
         font-size: 14px;
         margin-bottom: 54px;
       }

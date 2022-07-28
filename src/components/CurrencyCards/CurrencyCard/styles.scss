@@ -37,12 +37,12 @@
   }
 }
 
-@media (max-width :400px){
-  .grid-element{
-    .currency-image{
+@media (max-width: 400px) {
+  .grid-element {
+    .currency-image {
       max-width: rem(128px);
     }
-    .price{
+    .price {
       padding-bottom: rem(39px);
     }
   }

@@ -15,7 +15,6 @@
   display: flex;
   flex-direction: column;
   .upper-hr {
-    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,11 +86,10 @@
     .footer-content,
     content {
       .upper-hr {
-        
         flex-direction: column;
         align-items: flex-start;
         .help {
-          .contact{
+          .contact {
             padding-bottom: rem(60px);
             font-size: 42px;
           }
@@ -112,7 +110,7 @@
           padding-top: rem(48px);
           padding-bottom: rem(84px);
         }
-        .footer-rules{
+        .footer-rules {
           padding-bottom: rem(20px);
         }
       }
@@ -134,14 +132,14 @@
             font-size: 20px;
           }
         }
-        .social-media{
-          gap:rem(24px)
+        .social-media {
+          gap: rem(24px);
         }
       }
       .lower-hr {
         flex-direction: column-reverse;
         align-items: center;
-        .rights{
+        .rights {
           text-align: center;
         }
         .download-buttons-container {

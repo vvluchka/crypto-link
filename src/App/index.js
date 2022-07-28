@@ -16,11 +16,11 @@ function App() {
 
   useEffect(() => {
     if (modalIsOpened) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto'
+      document.body.style.overflow = "auto";
     }
-  }, [modalIsOpened])
+  }, [modalIsOpened]);
 
   const openModal = () => {
     setModalIsOpened(true);
@@ -28,20 +28,20 @@ function App() {
 
   const closeModal = () => {
     setModalIsOpened(false);
-  }
+  };
 
   return (
     <>
       <Navbar />
-      <Hero openModal={openModal}/>
-      <Swap openModal={openModal}/>
+      <Hero openModal={openModal} />
+      <Swap openModal={openModal} />
       <MultiChain />
       <CurrencyCards />
       <DebitCard />
       <ScrollToTop />
       <StartTutorial />
       <Footer />
-      <ModalWindow isOpened={modalIsOpened} closeModal={closeModal}  />
+      <ModalWindow isOpened={modalIsOpened} closeModal={closeModal} />
     </>
   );
 }

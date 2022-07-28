@@ -43,7 +43,7 @@ function StartTutorial() {
           </div>
         </div>
       </div>
-      <img src="/images/iphone/phone-illustration2.png" className="phone"/>
+      <img src="/images/iphone/phone-illustration2.png" className="phone" />
     </div>
   );
 }

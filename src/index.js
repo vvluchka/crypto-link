@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./styles/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import 'swiper/css';
+import "swiper/css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

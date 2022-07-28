@@ -15,7 +15,7 @@
     font-family: $font;
     color: $text-color;
     z-index: 1;
-  
+
     .heading {
       font-size: rem(84px);
       font-weight: 700;
@@ -92,7 +92,8 @@
 
 @media (max-width: 768px) {
   .hero-container .main {
-    .heading, .text {
+    .heading,
+    .text {
       text-align: center;
     }
     .heading {

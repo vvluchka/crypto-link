@@ -17,7 +17,7 @@
     font-family: $font;
     z-index: 1;
 
-    .download-buttons-container { 
+    .download-buttons-container {
       width: fit-content;
       margin: auto;
       padding-top: rem(80px);
@@ -63,8 +63,7 @@
           flex-direction: column;
           gap: 18px;
           padding-top: rem(17px);
-          
-          
+
           p {
             color: $light-gray;
             font-weight: 500;
@@ -87,7 +86,7 @@
   .start-tutorial-container {
     .mobile-app {
       padding-bottom: rem(200px);
-    } 
+    }
     .phone {
       width: rem(980px);
       bottom: rem(180px);
@@ -113,8 +112,8 @@
   .start-tutorial-container {
     .mobile-app {
       align-items: center;
-      h1{
-        font-size:32px;
+      h1 {
+        font-size: 32px;
         padding: 0;
       }
       .start-steps {
@@ -129,12 +128,11 @@
             min-width: rem(46px);
             min-height: rem(46px);
             font-size: 18px;
-            
           }
           .step-text {
             text-align: center;
-            h3{
-              font-size:20px;
+            h3 {
+              font-size: 20px;
             }
             p {
               font-size: 14px;

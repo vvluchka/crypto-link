@@ -22,39 +22,39 @@
     padding-top: rem(260px);
     font-family: $font;
     color: $white;
-      .debit-card-heading {
-        margin-bottom: rem(50px);
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 134%;
-      }
-      .debit-card-paragraph {
-        margin-bottom: rem(100px);
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 200%;
-        max-width: rem(680px);
-      }
-      .debit-link {
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        transition: 0.7s;
-        .link-text{
-          margin: 0;
-          padding-right: rem(12px);
-          transition: 0.4s;
-        }
-      }
-      .debit-link:hover{
-        .link-text{
-          padding-right: 30px;
-          transition: 0.6s;
-        }
-        cursor:pointer;
-        opacity: 0.5;
+    .debit-card-heading {
+      margin-bottom: rem(50px);
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 134%;
+    }
+    .debit-card-paragraph {
+      margin-bottom: rem(100px);
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 200%;
+      max-width: rem(680px);
+    }
+    .debit-link {
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      transition: 0.7s;
+      .link-text {
+        margin: 0;
+        padding-right: rem(12px);
         transition: 0.4s;
       }
+    }
+    .debit-link:hover {
+      .link-text {
+        padding-right: 30px;
+        transition: 0.6s;
+      }
+      cursor: pointer;
+      opacity: 0.5;
+      transition: 0.4s;
+    }
   }
 }
 
@@ -73,11 +73,11 @@
       padding-bottom: 692px;
       text-align: center;
       .debit-card-heading {
-          font-size: 48px;
-        }
-        .debit-card-paragraph {
-          font-size: 16px;
-        }
+        font-size: 48px;
+      }
+      .debit-card-paragraph {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -100,7 +100,6 @@
       }
       .debit-card-paragraph {
         font-size: 14px;
-      
       }
     }
   }
