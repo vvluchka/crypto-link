@@ -90,11 +90,8 @@
 }
 
 @media (max-width: 768px) {
-  .debit-card .debit-card-content {
-    .text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  .debit-card {
+    .debit-card-content {
       .debit-card-heading {
         font-size: 32px;
       }
