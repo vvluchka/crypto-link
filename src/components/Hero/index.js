@@ -3,7 +3,7 @@ import "./styles.scss";
 
 function Hero(props) {
   const { openModal } = props;
-  // const openModal = props.openModal
+  
 
   return (
     <div className="hero-container">

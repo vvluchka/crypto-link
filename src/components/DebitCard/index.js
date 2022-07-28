@@ -1,7 +1,8 @@
 import React from "react";
 import "./styles.scss";
 
-function DebitCard() {
+function DebitCard(props) {
+  const { openModal } = props;
   return (
     <div className="debit-card">
       <div className="debit-card-content content ">
@@ -15,7 +16,7 @@ function DebitCard() {
           transfer to process. The CryptoLink debit card makes spending your
           portfolios passive income extremely easy.{" "}
         </p>
-        <div className="debit-link">
+        <div className="debit-link" onClick={openModal}>
           <p className="link-text">Get Your CryptoLink Debit Card Today</p>
           <img src="/images/arrow-right.svg"></img>
         </div>

@@ -37,7 +37,7 @@ function App() {
       <Swap openModal={openModal} />
       <MultiChain />
       <CurrencyCards />
-      <DebitCard />
+      <DebitCard openModal={openModal} />
       <ScrollToTop />
       <StartTutorial />
       <Footer />
