@@ -1,4 +1,6 @@
 import React from "react";
+
+import { publicUrl } from '../../utils/public'
 import "./styles.scss";
 
 function DebitCard(props) {
@@ -18,7 +20,7 @@ function DebitCard(props) {
         </p>
         <div className="debit-link" onClick={openModal}>
           <p className="link-text">Get Your CryptoLink Debit Card Today</p>
-          <img src="/images/arrow-right.svg"></img>
+          <img src={publicUrl("/images/arrow-right.svg")}></img>
         </div>
       </div>
     </div>

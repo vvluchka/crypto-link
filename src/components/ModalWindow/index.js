@@ -1,4 +1,6 @@
 import React from "react";
+
+import { publicUrl } from "../../utils/public";
 import "./styles.scss";
 
 function ModalWindow(props) {
@@ -33,7 +35,7 @@ function ModalWindow(props) {
             CONFIRM
             <img
               className="confirm-arrow"
-              src="/images/confirm-arrow.svg"
+              src={publicUrl("/images/confirm-arrow.svg")}
             ></img>
           </button>
         </form>

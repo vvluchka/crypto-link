@@ -1,6 +1,8 @@
 import React from "react";
-import "./styles.scss";
+
 import DownloadButtons from "../DownloadButtons";
+import { publicUrl } from '../../utils/public';
+import "./styles.scss";
 
 function StartTutorial() {
   return (
@@ -43,7 +45,7 @@ function StartTutorial() {
           </div>
         </div>
       </div>
-      <img src="/images/iphone/phone-illustration2.png" className="phone" />
+      <img src={publicUrl("/images/iphone/phone-illustration2.png")} className="phone" />
     </div>
   );
 }
