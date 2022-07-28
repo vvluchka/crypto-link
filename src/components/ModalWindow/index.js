@@ -3,12 +3,12 @@ import "./styles.scss";
 
 function ModalWindow(props) {
   const { isOpened, closeModal } = props;
-  
+
   const onSubmit = (event) => {
     event.preventDefault();
     closeModal();
-  }
-  
+  };
+
   if (!isOpened) {
     return null;
   }
@@ -29,7 +29,13 @@ function ModalWindow(props) {
             placeholder="email@example.com"
             required
           />
-          <button className="submit-button" type="submit">CONFIRM<img className="confirm-arrow" src="/images/confirm-arrow.svg"></img></button>
+          <button className="submit-button" type="submit">
+            CONFIRM
+            <img
+              className="confirm-arrow"
+              src="/images/confirm-arrow.svg"
+            ></img>
+          </button>
         </form>
       </div>
     </div>
