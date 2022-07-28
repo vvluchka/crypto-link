@@ -7,7 +7,7 @@ import DebitCard from "../components/DebitCard";
 import ScrollToTop from "../components/ScrollToTop";
 import StartTutorial from "../components/StartTutorial";
 import Footer from "../components/Footer";
-
+import ModalWindow from "../components/ModalWindow";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
       <ScrollToTop />
       <StartTutorial />
       <Footer />
+      <ModalWindow />
     </>
   );
 }

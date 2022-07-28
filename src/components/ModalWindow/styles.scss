@@ -1,0 +1,42 @@
+@use "../../styles/variables" as *;
+@use "../../styles/functions" as *;
+
+.modal-window-container {
+  display: flex;
+  justify-content: center;
+  font-family: $font;
+  color: $light-gray;
+  background-color: $background;
+  .window {
+    .modal-window {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: rem(277px);
+      padding-top: rem(200px);
+
+      .main-label {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 126%;
+        color: $white;
+      }
+      .less-label {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 180%;
+        margin-bottom: rem(48px);
+      }
+      .form {
+        display: flex;
+        justify-content: space-between;
+        .text-input {
+          padding: 11px 18px;
+          background-color: inherit;
+          border: 1px solid $light-gray;
+          outline: 2px solid #24262b;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
