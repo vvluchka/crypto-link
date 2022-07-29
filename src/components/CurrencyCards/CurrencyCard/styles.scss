@@ -8,18 +8,21 @@
   align-items: center;
   font-family: $font;
   min-height: rem(345px);
-  justify-content: space-around;
+  justify-content: flex-end;
+  position: relative;
+  max-height: rem(334px);
 
   .grid-element:hover {
     transform: scale(1.1);
     cursor: pointer;
   }
   .currency-image {
-    position: relative;
-    bottom: 30px;
+    top: -50px;
     border-radius: 50%;
-    outline: rem(20px) solid white;
-    margin-bottom: 46px;
+    border: rem(15px) solid white;
+    position: absolute;
+    border-collapse: collapse;
+    
   }
   .title {
     margin: 0;
@@ -37,10 +40,12 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
   .grid-element {
     .currency-image {
-      max-width: rem(128px);
+      max-width: rem(150px);
+      top: -20px;
+
     }
     .price {
       padding-bottom: rem(39px);
