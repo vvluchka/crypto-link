@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/crypto-link/static/css/main.2e463f00.css",
+    "main.css": "/crypto-link/static/css/main.41b16e5a.css",
     "main.js": "/crypto-link/static/js/main.48a49774.js",
     "static/js/787.baf47515.chunk.js": "/crypto-link/static/js/787.baf47515.chunk.js",
     "static/media/debit-card-background-big.png": "/crypto-link/static/media/debit-card-background-big.ccf477a31e8ff7659e4b.png",
@@ -9,12 +9,12 @@
     "static/media/modal-glow.svg": "/crypto-link/static/media/modal-glow.4b4f020fa6a6d8e6c09d.svg",
     "index.html": "/crypto-link/index.html",
     "static/media/close-button.svg": "/crypto-link/static/media/close-button.be7535bd31d0b429730a.svg",
-    "main.2e463f00.css.map": "/crypto-link/static/css/main.2e463f00.css.map",
+    "main.41b16e5a.css.map": "/crypto-link/static/css/main.41b16e5a.css.map",
     "main.48a49774.js.map": "/crypto-link/static/js/main.48a49774.js.map",
     "787.baf47515.chunk.js.map": "/crypto-link/static/js/787.baf47515.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e463f00.css",
+    "static/css/main.41b16e5a.css",
     "static/js/main.48a49774.js"
   ]
 }
