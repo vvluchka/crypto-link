@@ -3,18 +3,18 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "phone-logo.png",
+      "src": "ico..ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "image/x-icon"
     },
     {
-      "src": "phone-logo.png",
-      "type": "image/png",
+      "src": "ico..ico",
+      "type": "image/x-icon",
       "sizes": "192x192"
     },
     {
-      "src": "phone-logo.png",
-      "type": "image/png",
+      "src": "ico..ico",
+      "type": "image/x-icon",
       "sizes": "512x512"
     }
   ],
