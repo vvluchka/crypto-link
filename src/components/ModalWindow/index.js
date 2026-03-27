@@ -34,6 +34,7 @@ function ModalWindow(props) {
           <button className="submit-button" type="submit">
             CONFIRM
             <img
+              alt="alt"
               className="confirm-arrow"
               src={publicUrl("/images/confirm-arrow.svg")}
             ></img>

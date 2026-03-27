@@ -1,6 +1,6 @@
 import React from "react";
 
-import { publicUrl } from '../../utils/public'
+import { publicUrl } from "../../utils/public";
 
 import "./styles.scss";
 
@@ -22,15 +22,19 @@ function Hero(props) {
         <div className="hero-buttons-container">
           <button className="hero-buttons learn-more">
             LEARN MORE
-            <img src={publicUrl("/images/arrow-down.svg")}></img>
+            <img alt="alt" src={publicUrl("/images/arrow-down.svg")}></img>
           </button>
           <button className="hero-buttons get-started" onClick={openModal}>
             GET STARTED
-            <img src={publicUrl("/images/arrow-up-45.svg")}></img>
+            <img alt="alt" src={publicUrl("/images/arrow-up-45.svg")}></img>
           </button>
         </div>
       </main>
-      <img src={publicUrl('/images/iphone/iPhone2.png')} className="phone" />
+      <img
+        alt="alt"
+        src={publicUrl("/images/iphone/iPhone2.png")}
+        className="phone"
+      />
     </div>
   );
 }

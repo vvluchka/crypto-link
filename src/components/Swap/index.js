@@ -1,6 +1,6 @@
 import React from "react";
 
-import { publicUrl } from '../../utils/public';
+import { publicUrl } from "../../utils/public";
 import "./styles.scss";
 
 function Swap(props) {
@@ -20,13 +20,18 @@ function Swap(props) {
           </p>
           <button className="get-started" onClick={openModal}>
             GET STARTED
-            <img src={publicUrl("/images/arrow-up-45.svg")}></img>
+            <img alt="alt" src={publicUrl("/images/arrow-up-45.svg")}></img>
           </button>
         </div>
       </div>
 
-      <img src={publicUrl("/images/iphone/phone-illustration.png")} className="phone"></img>
       <img
+        alt="alt"
+        src={publicUrl("/images/iphone/phone-illustration.png")}
+        className="phone"
+      ></img>
+      <img
+        alt="alt"
         src={publicUrl("/images/iphone/phone-illustration-mobile.png")}
         className="phone-mobile"
       ></img>

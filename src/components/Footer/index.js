@@ -1,7 +1,7 @@
 import React from "react";
 
 import DownloadButtons from "../DownloadButtons";
-import { publicUrl } from '../../utils/public'
+import { publicUrl } from "../../utils/public";
 import "./styles.scss";
 
 function Footer() {
@@ -16,10 +16,22 @@ function Footer() {
             </a>
           </div>
           <div className="social-media">
-            <img src={publicUrl("/images/social-media/instagram.svg")}></img>
-            <img src={publicUrl("/images/social-media/twitter.svg")}></img>
-            <img src={publicUrl("/images/social-media/youtube.svg")}></img>
-            <img src={publicUrl("/images/social-media/media.svg")}></img>
+            <img
+              alt="alt"
+              src={publicUrl("/images/social-media/instagram.svg")}
+            ></img>
+            <img
+              alt="alt"
+              src={publicUrl("/images/social-media/twitter.svg")}
+            ></img>
+            <img
+              alt="alt"
+              src={publicUrl("/images/social-media/youtube.svg")}
+            ></img>
+            <img
+              alt="alt"
+              src={publicUrl("/images/social-media/media.svg")}
+            ></img>
           </div>
         </div>
         <hr />
